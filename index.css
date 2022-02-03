@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    /* 1] so image will never grow out of decided width at first 
+       2] wrap it inside div           */
+    max-width: 100%;
+}
+
+header {
+    background-color: #136C72;
+
+}
+
+/* .logo{
+    display: flex;
+    border: pink solid 2px;
+    align-items: center;
+    justify-content: space-between; 
+} */
+.row a {
+    /* border: springgreen solid 2px; */
+    align-self: center;
+}
+
+.nav {
+    padding: 2rem 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px red solid; */
+}
+
+.nav__list {
+    display: flex;
+    /* border: 2px yellow solid; */
+    align-items: center;
+}
+
+.nav__item {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.nav__item+.nav__item {
+    margin-left: 2em;
+}
+
+.nav__btn {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0.50em 1.5em;
+    border-radius: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    /* border:red 2px solid ; */
+}
+
+.intro {
+    background-color: #23424A;
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 968px;
+}
+
+.intro__text {
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.intro__text h1,
+.intro__text p {
+    margin: 2rem 0;
+}
+
+.intro__img {
+    width: 40%;
+    align-self: center;
+    /* border: 2px yellow solid; */
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #38CFD9;
+    color: #23424A;
+    padding: .50rem 1.25rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+
+.col1 {
+    width: 50%;
+}
+
+.col1 h1 {
+    color: #38CFD9;
+    margin: 1rem 0;
+}
+
+.sidebar {
+    width: 40%;
+    background-color: #136C72;
+    color: white;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.sidebar h3 {
+    margin: 1rem;
+}
+
+.container.row {
+    margin-top: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
